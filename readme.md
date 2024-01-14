@@ -1,13 +1,13 @@
-# Reconhecimento de Gestos de Mão com MediaPipe e Keras
+# Reconhecimento de Gestos de Mão em Vídeo com MediaPipe e Keras
 
-Este código demonstra como realizar o reconhecimento de gestos de mão em imagens utilizando a biblioteca MediaPipe e um modelo de aprendizado profundo carregado com o Keras. O objetivo é identificar gestos de mão específicos em imagens e exibir os resultados visualmente.
+Este código demonstra como realizar o reconhecimento de gestos de mão em um vídeo utilizando a biblioteca MediaPipe e um modelo de aprendizado profundo carregado com o Keras. O objetivo é identificar gestos de mão específicos em cada quadro do vídeo e exibir os resultados visualmente em um novo vídeo de saída.
 
 ## Pré-requisitos
 
 Antes de executar o código, você precisará ter os seguintes pré-requisitos instalados:
 
 - Python (versão utilizada: 3.7+)
-- Bibliotecas Python: cv2, mediapipe, keras, numpy, PIL (Pillow)
+- Bibliotecas Python: cv2, mediapipe, keras, numpy
 - TensorFlow (versão utilizada: 2.9.1)
 - Jupyter Notebook (ou ambiente equivalente)
 
@@ -15,13 +15,13 @@ Antes de executar o código, você precisará ter os seguintes pré-requisitos i
 
 1. **Código Fonte**: Certifique-se de que você tenha o código fonte em mãos.
 
-2. **Imagens de Entrada**: Você precisa fornecer imagens de gestos de mão como entrada para o código. No exemplo fornecido, uma lista de nomes de arquivos de imagem é usada (por exemplo, 'B2.jpg'). Certifique-se de que suas imagens estejam no mesmo diretório ou atualize o caminho dos arquivos de imagem conforme necessário.
+2. **Vídeo de Entrada**: Você precisa fornecer um vídeo como entrada para o código. No exemplo fornecido, o caminho para o vídeo é definido como 'V.mp4'. Certifique-se de que seu vídeo esteja no mesmo diretório ou atualize o caminho do arquivo de vídeo conforme necessário.
 
 3. **Modelo Keras**: Você também precisa ter treinado um modelo de aprendizado profundo para o reconhecimento de gestos de mão usando o Keras. Certifique-se de carregar o modelo corretamente no código (por exemplo, 'keras_model.h5').
 
-4. **Execução**: Execute o código em um ambiente Python compatível (como o Jupyter Notebook). Ele processará as imagens de entrada, identificará gestos de mão e exibirá os resultados visualmente usando OpenCV.
+4. **Execução**: Execute o código em um ambiente Python compatível (como o Jupyter Notebook). Ele processará cada quadro do vídeo de entrada, identificará gestos de mão e exibirá os resultados visualmente em um novo vídeo de saída.
 
-5. **Resultados**: Os resultados do reconhecimento de gestos de mão serão exibidos na tela, com rótulos indicando o gesto identificado.
+5. **Resultados**: O vídeo de saída conterá os quadros do vídeo de entrada com os rótulos indicando o gesto de mão identificado.
 
 ## Melhorando o Modelo
 
